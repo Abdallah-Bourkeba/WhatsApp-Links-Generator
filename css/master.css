@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --main-color: green;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  background-color: #ededed;
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #009688;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.container .box, form{
+  display: flex;
+  flex-direction: column;
+  min-width: 440px;
+}
+
+.container .image {
+  margin: 30px 40px;
+}
+
+.container form {
+  min-width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container form input {
+  font-size: 15px;
+  min-width: 100%;
+  height: 50px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.container form input[type="submit"] {
+  background-color: #00c868;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.overlay .container {
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 150;
+  background-color: white;
+  width: 500px;
+  height: 200px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  justify-content: center;
+  align-content: center;
+}
+
+.overlay .container .link {
+  background-color: white;
+  min-width: calc(100% - 40px);
+  overflow-x: scroll;
+}
+
+
+.container > button {
+  right: -16px;
+  cursor: pointer;
+  position: absolute;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 7px 11px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  top: -13px;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #7c7c7c8a;
+  z-index: 10;
+  display: none;
+}
+
+.overlay .copy {
+  background-color: #009688;
+  cursor: pointer;
+  width: 70px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.overlay .copied {
+  font-size: 13px;
+  background-color: #555;
+  width: 100px;
+  color: white;
+  padding: 10px 5px;
+  position: absolute;
+  border-radius: 5px;
+  bottom: -5%;
+  right: 200px;
+  display: none;
+  transition: 0.5s;
+}
+
+.overlay .copied::after {
+  content: "";
+  position: absolute;
+  top: -27%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent transparent #555 transparent ;
+}
