@@ -38,6 +38,16 @@ body {
   margin: 30px 40px;
 }
 
+@media (max-width: 768px) {
+  .container .box,
+  form {
+    min-width: 240px;
+  }
+  .container .image {
+    margin: 15px 20px;
+  }
+}
+
 .container form {
   min-width: 100%;
   min-height: 200px;
@@ -61,6 +71,16 @@ body {
   color: white;
   cursor: pointer;
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .container form input {
+    font-size: 13px;
+    height: 40px;
+  }
+  .container form input[type="submit"] {
+    font-size: 16px;
+  }
 }
 
 .overlay .container {
@@ -149,4 +169,15 @@ body {
   border-width: 5px;
   border-style: solid;
   border-color:  transparent transparent #555 transparent ;
+}
+
+@media (max-width: 768px) {
+  .overlay .container {
+    width: 300px;
+    min-height: 240px;
+  }
+  .overlay .copied {
+    bottom: -1%;
+    right: 100px;
+  }
 }
