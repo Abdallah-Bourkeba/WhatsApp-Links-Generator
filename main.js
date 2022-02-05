@@ -21,7 +21,7 @@ submit.onclick = function clickd() {
   if (!inpMessage.includes(" ") && !inpMessage.includes("/")) {
     message = inpMessage;
   } else if (inpMessage.includes(" ") || inpMessage.includes("/")) {
-    message = inpMessage.replace(/\s/g, "%20").replace(/\\|\//g, "%2F");
+    message = inpMessage.replace(/\s/g, "%20").replace(/\//g, "%2F");
   }
   allLink = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
   realMessage.setAttribute("href", allLink);
