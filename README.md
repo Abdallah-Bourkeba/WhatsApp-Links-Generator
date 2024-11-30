@@ -30,13 +30,4 @@ All images used in this project are in SVG format and are designed to be scalabl
    ```
 2. Open the `index.html` file in your browser to use the WhatsApp Links Generator.
 
-## License
 
-This project is licensed under the MIT License.
-
-
-All images used in this project are in SVG format to ensure they are scalable and responsive.
-
-## License
-
-This project is licensed under the MIT License.
