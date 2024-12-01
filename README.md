@@ -21,13 +21,3 @@ This link will open a chat with the phone number `1234567890` and the message `H
 ## Images
 
 All images used in this project are in SVG format and are designed to be scalable and responsive.
-
-## How to Use
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/Abdallah-Bourkeba/WhatsApp-Links-Generator.git
-   ```
-2. Open the `index.html` file in your browser to use the WhatsApp Links Generator.
-
-
